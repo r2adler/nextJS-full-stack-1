@@ -22,7 +22,7 @@ export const AllUsers = () => {
     }
     fetchAllUsers()
   }, [])
-  console.log(users)
+ 
 
   return (
     <div>
@@ -30,15 +30,8 @@ export const AllUsers = () => {
         users.map((user) => (
           <Card key={user.id} className="mt-4">
             <CardHeader>
-              <CardTitle>{user.name}</CardTitle>
-              <CardDescription>Card Description</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-              <p>Card Footer</p>
-            </CardFooter>
+              <CardTitle>{user.name}</CardTitle>         
+            </CardHeader>     
           </Card>
         ))}
     </div>
